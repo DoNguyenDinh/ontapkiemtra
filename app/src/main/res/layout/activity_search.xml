@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Enter number or name to search"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_searchWithName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="searchName"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_search" />
+
+    <Button
+        android:id="@+id/btn_searchWithNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:onClick="searchNumber"
+        android:text="Number"
+        app:layout_constraintEnd_toStartOf="@+id/btn_back"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/btn_searchWithName"
+        app:layout_constraintTop_toBottomOf="@+id/edt_search" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="back"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_search" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/txt_resultID"-->
+    <!--        android:layout_width="194dp"-->
+    <!--        android:layout_height="39dp"-->
+    <!--        android:layout_marginTop="100dp"-->
+    <!--        android:text="ID"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/btn_searchWithNumber" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/txt_resultName"-->
+    <!--        android:layout_width="189dp"-->
+    <!--        android:layout_height="39dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:text="Name"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/txt_resultID"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/txt_resultID"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/txt_resultID" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/txt_resultNumber"-->
+    <!--        android:layout_width="189dp"-->
+    <!--        android:layout_height="47dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:text="Nmuber"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/txt_resultName"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/txt_resultName"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/txt_resultName" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_result"
+        android:layout_width="407dp"
+        android:layout_height="331dp"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_searchWithNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

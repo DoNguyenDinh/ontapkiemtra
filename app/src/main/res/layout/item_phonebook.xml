@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="10dp"
+    android:background="@color/custom_item_PB"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center|center_vertical"
+            android:text="name"
+            android:textSize="34sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_phoneNumber"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:gravity="center|center_vertical"
+            android:text="Phone Number"
+            android:textSize="34sp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/txt_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:gravity="center_horizontal"
+                android:text="ID"
+                android:textSize="34sp">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edit">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/delete">
+
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
